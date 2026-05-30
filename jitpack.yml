@@ -1,19 +1,10 @@
 jdk:
   - openjdk17
 
-install:
-  - flutter config --no-analytics
-  - flutter precache --android
-  - flutter build aar --debug
-  - flutter build aar --profile
-  - flutter build aar --release
+flutter:
+  version: 3.24.0
 
-build:
-  override: true
-  env:
-    - PUB_CACHE=D:/pub_cache
-
-cache:
-  directories:
-    - $HOME/.gradle/caches
-    - $HOME/.pub-cache
+builds:
+  - name: flutter
+    env:
+      PUB_CACHE: $HOME/.pub-cache
