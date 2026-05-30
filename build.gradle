@@ -1,0 +1,16 @@
+// Root build.gradle for JitPack compatibility
+// Flutter AAR is built separately via `flutter build aar`
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    namespace "com.example.flutter_ocr"
+    compileSdk 36
+}
