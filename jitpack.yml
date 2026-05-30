@@ -4,7 +4,5 @@ jdk:
 flutter:
   version: "3.24.0"
 
-install:
-  - name: flutter
-    env:
-      PUB_CACHE: $HOME/.pub-cache
+env:
+  PUB_CACHE: $HOME/.pub-cache
