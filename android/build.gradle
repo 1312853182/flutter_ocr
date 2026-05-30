@@ -1,0 +1,11 @@
+// Placeholder file to make JitPack recognize this as an Android module
+// Flutter AAR is built separately via `flutter build aar`
+
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace "com.example.flutter_ocr"
+    compileSdk 36
+}
